@@ -1,0 +1,17 @@
+
+body{
+    margin: 0px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+main{
+    margin-top: 50px;
+}
+
+
+footer{
+    background-color: rgba(90, 84, 84, 0.363);
+    margin-top: 50px;
+}
+
