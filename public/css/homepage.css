@@ -1,0 +1,17 @@
+.container{
+    margin: 0px 20%;
+    background-color: lightgray;
+    width: 800px;
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.subtitulo{
+    width: 100%;
+    text-align: left;
+}
+
+.texto{
+    margin-top: 10px;
+}
