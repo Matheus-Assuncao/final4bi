@@ -6,13 +6,17 @@ const route = express.Router();
 const conn = require('./connectaBD');
 
 
-//Rota inicio
+//HomePage
 route.get('/',(req,res) =>{
-    res.sendFile(path.join(__dirname, 'public/html/index.html'));
+    res.sendFile(path.join(__dirname, 'public/views/index.html'));
 })
 
 route.get('/produtos',(req,res) =>{
-    res.sendFile(path.join(__dirname, 'public/html/forms.html'))
+    res.sendFile(path.join(__dirname, 'public/views/forms.html'))
+})
+
+route.get('/trabalhos', (req,res)=>{
+    res.sendFile(path.join(__dirname, 'public/views/trabalhos.html'))
 })
 
 //Rota formulário

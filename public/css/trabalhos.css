@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px
+  }
+
+.botao {
+    margin: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(58, 55, 55, 0.614);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+.botao:hover {
+    background-color: rgba(149, 78, 78, 0.614);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+  
+
+.materias{
+    font-size: 2em;
+    width: 400px;
+}
