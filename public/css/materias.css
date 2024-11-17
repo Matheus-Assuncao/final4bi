@@ -1,0 +1,36 @@
+
+.subtitulo{
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+section{
+    margin-bottom: 30px;
+
+}
+
+section > p{
+    font-size: 1.25rem;
+}
+
+.quadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    margin: 20px;
+}
+
+.quadro img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.quadro p {
+    margin-top: 10px;
+    font-size: 16px; 
+    color: #333; 
+}

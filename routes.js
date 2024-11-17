@@ -3,7 +3,7 @@ const path = require('path');
 const route = express.Router();
 
 //importando BD
-const conn = require('./connectaBD');
+//const conn = require('./connectaBD');
 
 
 //HomePage
@@ -17,6 +17,10 @@ route.get('/produtos',(req,res) =>{
 
 route.get('/trabalhos', (req,res)=>{
     res.sendFile(path.join(__dirname, 'public/views/trabalhos.html'))
+})
+
+route.get('/CN',(req,res)=>{
+    res.sendFile(path.join(__dirname, 'public/views/materias/natureza.html'))
 })
 
 //Rota formulário
