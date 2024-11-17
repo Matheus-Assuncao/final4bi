@@ -6,11 +6,7 @@ const route = express.Router();
 //const conn = require('./connectaBD');
 
 
-//HomePage
-route.get('/',(req,res) =>{
-    res.sendFile(path.join(__dirname, 'public/views/index.html'));
-})
-
+//NavBar
 route.get('/produtos',(req,res) =>{
     res.sendFile(path.join(__dirname, 'public/views/forms.html'))
 })
@@ -19,10 +15,27 @@ route.get('/trabalhos', (req,res)=>{
     res.sendFile(path.join(__dirname, 'public/views/trabalhos.html'))
 })
 
+//HomePage
+route.get('/',(req,res) =>{
+    res.sendFile(path.join(__dirname, 'public/views/index.html'));
+})
+
+//Materias
 route.get('/CN',(req,res)=>{
     res.sendFile(path.join(__dirname, 'public/views/materias/natureza.html'))
 })
 
+route.get('/CH',(req,res) =>{
+    res.sendFile(path.join(__dirname, 'public/views/materias/humanas.html'))
+})
+
+route.get('/mat',(req,res) =>{
+    res.sendFile(path.join(__dirname, 'public/views/materias/matematica.html'))
+})
+
+route.get('/ling',(req,res) =>{
+    res.sendFile(path.join(__dirname, 'public/views/materias/linguagens.html'))
+})
 //Rota formulário
 route.post('/pedido',(req,res)=>{
     const { produto, qtd } = req.body;

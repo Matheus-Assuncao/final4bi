@@ -17,9 +17,9 @@ footer{
 
 .container{
     margin: 0px 20%;
-    background-color: lightgray;
+    background-color: rgba(212, 208, 208, 0.673);
     width: 800px;
-    padding: 20px;
+    padding: 40px;
     border-radius: 20px;
     display: inline-block;
 }
