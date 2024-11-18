@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href="/">Portifólio</a>
+            <a class="logo" href="/">Produtos</a>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -29,7 +29,8 @@
     </header>
 
     <main>
-        <h2>Fazer Pedido</h2>
+        <div class="container">
+            <h2>Fazer Pedido</h2>
         <form action="/pedido" method="post">
             <div class="pergunta">
                 <label for="nome">Nome:</label>
@@ -47,8 +48,9 @@
                 <label for="qtd">Quantidade:</label>
                 <input type="number" name="qtd" id="qtd" required>
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit" class="btnEnvia">Enviar</button>
         </form>
+        </div>
     </main>
 
     <script src="../js/mobileNavbar.js"></script>
