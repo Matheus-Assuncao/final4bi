@@ -28,6 +28,7 @@ footer{
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
     display: block;
+    margin-bottom: 50px;
 }
 
 @media (max-width: 576px) {

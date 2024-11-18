@@ -20,6 +20,16 @@ route.get('/',(req,res) =>{
     res.sendFile(path.join(__dirname, 'public/views/index.html'));
 })
 
+route.post('/contato',(req,res)=>{
+    const {nome,sobrenome,mensagem} = req.body;
+    let sql = 'INSERT INTO user_tb(user,lastName,message) values(?,?,?)';
+    conn.query(sql,[nome,sobrenome,mensagem],(err,resultado)=>{
+        if (err) throw err;
+        console.log('Mensagem enviada')
+        res.send('Mensagem enviada!')
+    })
+})
+
 //Materias
 route.get('/CN',(req,res)=>{
     res.sendFile(path.join(__dirname, 'public/views/materias/natureza.html'))
@@ -36,7 +46,8 @@ route.get('/mat',(req,res) =>{
 route.get('/ling',(req,res) =>{
     res.sendFile(path.join(__dirname, 'public/views/materias/linguagens.html'))
 })
-//Rota formulário
+
+//Rota produtos
 route.post('/pedido',(req,res)=>{
     const { produto, qtd } = req.body;
     let sql = 'INSERT INTO order_tb (objName,qtd) values(?,?)';
