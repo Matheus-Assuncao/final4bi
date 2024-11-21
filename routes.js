@@ -15,6 +15,10 @@ route.get('/trabalhos', (req,res)=>{
     res.sendFile(path.join(__dirname, 'public/views/trabalhos.html'))
 })
 
+route.get('/tendencias', (req,res)=>{
+    res.sendFile(path.join(__dirname, 'public/views/tendencias.html'))
+})
+
 //HomePage
 route.get('/',(req,res) =>{
     res.sendFile(path.join(__dirname, 'public/views/index.html'));
@@ -26,8 +30,16 @@ route.post('/contato',(req,res)=>{
     conn.query(sql,[nome,sobrenome,mensagem],(err,resultado)=>{
         if (err) throw err;
         console.log('Mensagem enviada')
-        res.send('Mensagem enviada!')
+        res.send(`<html>
+                <body>
+                    <script>
+                        alert('Mensagem enviada!');
+                        window.location.href = '/';
+                    </script>
+                </body>
+            </html>`)
     })
+
 })
 
 //Materias
@@ -54,7 +66,14 @@ route.post('/pedido',(req,res)=>{
     conn.query(sql,[produto,qtd],(err,resultado)=>{
         if(err) throw err;
         console.log(`Pedido ${produto} salvo no BD`)
-        res.send("Pedido realizado com sucesso!")
+        res.send(`<html>
+            <body>
+                <script>
+                    alert('Seu pedido de ${produto}(s) foi realizado!');
+                    window.location.href = '/';
+                </script>
+            </body>
+        </html>`)
     })
 })
 

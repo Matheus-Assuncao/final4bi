@@ -1,19 +1,46 @@
-.pergunta{
-    margin-top: 20px;
-}
-
-.btnEnvia{
-    width: 100px;
-}
-
-
-button{
-    margin-top: 30px;
+input[type="text"],
+input[type="number"] {
+    width: 100%; 
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.379);
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box;
 }
 
-button:hover{
-    background-color: lightgray;
+.pergunta {
+    margin-bottom: 20px; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+button.btnEnvia {
+    width: auto; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+button.btnEnvia:hover {
+    background-color: #0056b3; 
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+h2{
+    margin-bottom: 20px;
 }

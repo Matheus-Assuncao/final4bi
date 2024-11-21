@@ -31,19 +31,55 @@
     <main>
         <div class="container">
             <h2 class="subtitulo">Matheus Assunção</h2>
-            <p class="texto">Olá, sou o Matheus. Tenho 17 anos, gosto de esportes, carros, tecnologia e música.</p>
+            <div class="perfil">
+                <p class="texto-perfil">Olá, sou o Matheus. Tenho 17 anos, estou terminando o ensino médio no Senac. Gosto de esportes, carros, tecnologia e música.</p>
+                <img src="../images/perfil.jpeg" alt="foto de perfil" class="foto-perfil">
+            </div>
+            <h3 class="subtitulo">Habilidades</h3>
+            <div class="habilidades">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.JS</li>
+                    <li>SQL</li>
+                </ul>
+                <ul>
+                    <li>Trabalho em equipe</li>
+                    <li>Resolução de problemas</li>
+                    <li>Proativo</li>
+                </ul>
+            </div>
+
+            <h3 class="subtitulo">Projetos</h3>
+            <div class="projetos">
+                <div class="card-projeto">
+                    <a href="https://github.com/Matheus-Assuncao/Final3bi" ><img src="../images/projeto3bi.png" alt="Projeto 3bi" class="img-card"></a>
+                    <p>Projeto final do 3 bimestre. Um projeto feito em Java com uso de banco de dados SQL. Aprendi a linguagem, pratiquei conceitos de POO e integração com banco de dados. Link para o repositório -> <a href="https://github.com/Matheus-Assuncao/Final3bi">Clique aqui</a></p>
+                </div>
+                <div class="card-projeto">
+                    <a href="https://github.com/Matheus-Assuncao/final4bi"><img src="../images/projeto4bi.png" alt="Projeto4bi" class="img-card"></a>
+                    <p>Meu projeto final no ensimo médio técnico, este site. Com este projeto pratiquei meus conhecimentos em HTML e CSS adquiridos no ultimo bimestre, mas também juntei com conehcimentos com banco de dados SQL e JavaScript. Repositório do projeto -> <a href="https://github.com/Matheus-Assuncao/final4bi">Link</a></p>
+                </div>
+            </div>
         </div>
-        <div class="container">
+
+        <div class="container formulario">
             <h2 class="subtitulo">Entre em contato:</h2>
             <form action="/contato" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome">
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="sobrenome">
-                <br>
-                <label for="mensagem">Mensagem:</label>
-                <input type="text" name="mensagem" id="mensagem">
-                <button type="submit">Enviar</button>
+                <div class="forms">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome"  placeholder="Digite seu nome" required>
+                </div>
+                <div class="forms">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome"  placeholder="Digite seu Sobrenome" required> 
+                </div>
+                <div class="forms">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar</button>
             </form>
         </div>
     </main>

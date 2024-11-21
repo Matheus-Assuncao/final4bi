@@ -2,8 +2,174 @@
 .subtitulo{
     width: 100%;
     text-align: left;
+    display: block;
 }
 
 .texto{
     margin-top: 10px;
 }
+
+h2{
+    margin-bottom: 20px;
+}
+
+h3{
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button.btn-submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.texto-perfil{
+    width: 70%;
+}
+
+.foto-perfil{
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.habilidades{
+    display: flex;
+    gap: 50px;
+    align-items: left;
+    justify-content: left;
+}
+
+.habilidades ul{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.habilidades ul li {
+    margin: 5px;
+}
+
+
+
+.projetos{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.card-projeto {
+    background-color: #ffffffb4;
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    width: 400px;
+    padding: 15px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+
+.img-card {
+    height: auto;
+    width: 100%; 
+    max-height: 250px; 
+    border-radius: 10px; 
+    object-fit: cover; 
+    margin-bottom: 15px;
+}
+
+.card-projeto p {
+    font-size: 1rem; 
+    line-height: 1.5; 
+    color: #333; 
+    text-align: justify;
+}
+
+.card-projeto a {
+    color: #007BFF; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.card-projeto a:hover {
+    text-decoration: underline; 
+}
+
+
+
+
+@media (max-width: 576px) {
+    .perfil {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+    }
+
+    .texto-perfil {
+        width: 100%; 
+        text-align: justify;
+    }
+
+    .foto-perfil{
+        margin-top: 20px;
+    }
+
+    .card-projeto {
+        width: 90%;
+    }
+
+    .projetos {
+        flex-direction: column;
+        gap: 20px; 
+        align-items: center; 
+    }
+}
+
