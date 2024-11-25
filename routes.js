@@ -3,7 +3,7 @@ const path = require('path');
 const route = express.Router();
 
 //importando BD
-//const conn = require('./connectaBD');
+const conn = require('./connectaBD');
 
 
 //NavBar

@@ -43,13 +43,30 @@ section ul li {
     text-align: justify;
 }
 
-.blockchain{
+.blockchain, .automacao-robotica, .edge-computing {
     margin-top: 70px;
 }
 
 
-@media (max-width: 567px) {
+.introducao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.introducao img{
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
     .topicos {
         flex-direction: column;
+    }
+
+    .introducao {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
     }
 }
