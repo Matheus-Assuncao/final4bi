@@ -62,11 +62,12 @@ button.btn-submit:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
+    gap: 30px;
 }
 
 .texto-perfil{
     width: 70%;
+    text-align: justify;
 }
 
 .foto-perfil{
